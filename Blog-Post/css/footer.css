@@ -1,0 +1,26 @@
+/* Footer */
+#footer {
+    grid-area: ft;
+    background-color: #525050;
+    padding: 4em 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.social-media-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.social-media-links img {
+    width: 1em;
+    height: 1.5em;
+    margin: 0 1em;
+}
+
+#footer h4 {
+    margin-bottom: 1em;
+    font-weight: 100;
+    font-size: 0.6em;
+}

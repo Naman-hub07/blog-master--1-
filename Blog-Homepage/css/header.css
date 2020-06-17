@@ -1,0 +1,42 @@
+/* Header */
+.header {
+    grid-area: hd;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5a5857;
+    align-items: center;
+    padding: 2em 2em;
+}
+
+#blog-logo img {
+    width: 10em;
+    height: 10em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 20em;
+    font-size: 0.7em;
+}
+
+nav a {
+    color: rgb(233, 232, 232);
+}
+
+nav a:hover {
+    color: #0f49c5;
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    background: rgb(236, 236, 236);
+    height: 4px;
+    width: 0;
+    top: 0;
+    transition: all 1s ease-in-out 3ms;
+}
+nav a:hover::before {
+    width: 100%;
+}

@@ -1,0 +1,154 @@
+/* Other Posts */
+.other-posts {
+    grid-area: sec;
+    padding: 4em 2em 0 2em;
+    margin-top: 4em;
+}
+
+.other-posts h4 {
+    color: #000;
+    margin-top: 1em;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.other-posts h3 {
+    font-size: 0.7em;
+}
+.other-posts h4 {
+    font-size: 0.5em;
+}
+
+.other-posts-grid {
+    display: grid;
+    grid-gap: 2em;
+    justify-content: space-around;
+    grid-template-columns: 18em;
+}
+
+.other-posts-grid a:hover {
+    text-decoration: underline;
+}
+
+.recent-posts {
+    display: grid;
+    grid-gap: 4em;
+}
+
+.recent-posts-grid {
+    display: grid;
+    grid-gap: 2em;
+}
+
+.recent-posts-grid h3 {
+    color: #000;
+    margin-top: 1em;
+    font-weight: 100;
+    font-size: 0.6em;
+}
+
+.editors-picks {
+    display: grid;
+    grid-gap: 4em;
+    margin-top: 4em;
+}
+
+.editors-picks-grid {
+    display: grid;
+    grid-gap: 2em;
+}
+
+.editors-picks-grid h3 {
+    color: #000;
+    margin-top: 1em;
+    font-weight: 100;
+    font-size: 0.6em;
+}
+
+.miscellaneous {
+    display: grid;
+    grid-gap: 4em;
+    margin-top: 4em;
+}
+
+.miscellaneous-grid {
+    display: grid;
+    grid-gap: 2em;
+}
+
+.miscellaneous-grid h3 {
+    color: #000;
+    margin-top: 1em;
+    font-weight: 100;
+    font-size: 0.6em;
+}
+
+
+/* Media Queries for medium screens */
+@media (min-width: 501px) and (max-width: 845px) {
+    .other-posts-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .recent-posts-grid a,
+    .editors-picks-grid a,
+    .miscellaneous-grid a {
+        display: grid;
+        grid-template-columns: 8em auto;
+        grid-gap: 1.5em;
+        align-items: start;
+    }
+
+    .recent-posts-grid a img,
+    .editors-picks-grid a img,
+    .miscellaneous-grid a img {
+        width: 8em;
+        height: 7em;
+    }
+    
+    .editors-picks, 
+    .miscellaneous {
+        margin-top: 0;
+    }
+
+    .recent-posts-grid h3,
+    .editors-picks-grid h3,
+    .miscellaneous-grid h3 {
+        margin-top: 0;
+    }
+}
+
+
+/*  Media Queries for large screens */
+@media (min-width: 846px) {
+    .other-posts-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .recent-posts-grid a,
+    .editors-picks-grid a,
+    .miscellaneous-grid a {
+        display: grid;
+        grid-template-columns: 10em auto;
+        grid-gap: 3em;
+        align-items: start;
+    }
+
+    .recent-posts-grid a img,
+    .editors-picks-grid a img,
+    .miscellaneous-grid a img {
+        width: 10em;
+        height: 7em;
+    }
+    
+    .editors-picks, 
+    .miscellaneous {
+        margin-top: 0;
+    }
+
+    .recent-posts-grid h3,
+    .editors-picks-grid h3,
+    .miscellaneous-grid h3 {
+        margin-top: 0;
+    }
+}

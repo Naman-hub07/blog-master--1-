@@ -1,0 +1,35 @@
+/* Heading & Autthor's Information */
+section {
+    grid-area: sec;
+    padding: 4em 1em;
+    display: grid;
+    grid-template-columns: 30em;
+    justify-content: center;
+}
+
+section h1 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    margin-bottom: 2em;
+}
+
+.section-grid {
+    display: grid;
+    grid-template-areas: 
+    "img div div div";
+    grid-gap: 2em;
+    justify-self: center;
+}
+
+.section-grid img {
+    width: 6em;
+    height: 7em;
+    border-radius: 50%;
+    grid-area: img;
+}
+
+.section-grid div {
+    grid-area: div;
+}

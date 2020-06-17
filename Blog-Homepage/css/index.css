@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
+@import url(./header.css);
+@import url(./latest-posts.css);
+@import url(./other-posts.css);
+@import url(./subscribe.css);
+@import url(./footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: grid;
+    grid-template-areas: 
+    "hd"
+    "art"
+    "sec"
+    "subs"
+    "ft";
+    text-transform: uppercase;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-family: "Raleway", sans-serif;
+}
+
+img {
+    width: 18em;
+    height: 15em;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2  {
+    text-align: center;
+    margin-bottom: 4em;
+    font-size: 0.9em;
+}
+
+p {
+    color: #8d8383;
+    font-weight: 100;
+    font-size: 0.6em; 
+}
+
+button {
+    font-size: 0.5em;
+}
